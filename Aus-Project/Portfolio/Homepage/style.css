@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #241531;
+    height: auto;
+    float: left;
+    width: 100%;
+}
+nav h1{
+    float: left;
+    padding: 13px;
+}
+.navlink{
+    float: right;
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+}
+.navlink:hover{
+    background-color: blueviolet;
+    transition: 1s;
+    color: white;
+}
+
+.home_first_part{
+    display: flex;
+    width: 100%;
+    height: 700px;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.myself{
+ animation: fadeIn 5s;
+
+    flex: 1;
+    padding: 25px;
+    /*background-color: #d5d5f4;*/
+    text-align: justify;
+}
+.myself p, h1 {
+display: flex;
+    justify-items: center;
+    color: whitesmoke;
+    padding: 30px 0;
+}
+.home_image{
+  justify-content: center;
+align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 600px;
+    border-radius: 50%;
+
+
+}
+footer{
+    background-color: black;
+    color: whitesmoke;
+    height: 150px;
+
+}
+footer .footer_left{
+    font-family: 'Montserrat';
+    width: 75%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    float: left;
+    height: 150px;
+    text-align: left;
+}
+
+
+.footer_center p, a{
+    display: flex;
+    color: whitesmoke;
+    align-items: center;
+    text-align: left  ;
+    padding:20px 20px;
+    text-decoration: none;
+}
+footer .footer_right{
+    float: right;
+    width: 25%;
+    height: 100px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    /*background-color: red;*/
+}
+.footer_right img{
+    margin-left: 10px;
+}
+.footer_para{
+    font-size: 15px;
+    text-align: center;
+}
+.aboutme{
+    letter-spacing: 2px;
+}
+.iframe-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 115px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: calc(100% + 16px); /* Adjust the height to account for scrollbar width */
+    border: none;
+    margin-top: -8px; /* Adjust the margin to hide the scrollbar */
+}

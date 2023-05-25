@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  margin-right: 180px;
+
+
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.container_item{
+  animation: fadeIn 5s;
+  display: flex;
+  flex-direction: row;
+}
+.upperdiv {
+  float: left;
+  width: 50%;
+  height: 50%;
+}
+.edu_img{
+  width: 35%;
+  margin-left: 175px;
+}
+.elementdiv {
+  width: 400px;
+  height: 250px;
+  display: flex;
+  padding: 20px;
+  box-shadow: 0 15px 29px rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+
+.lowerdiv {
+  height: 600px;
+  width: 1500px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+}
+.maindiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 55px;
+}
+.carddiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: flex-start;
+}
+
+.smallbox {
+  width: 400px;
+  padding: 20px;
+  height: 250px;
+  box-shadow: 0 15px 29px rgba(0, 0, 0, 0.4);
+  border: none;
+  /*text-align: center;*/
+  /*background-color: red;*/
+}
+.elementdiv li{
+  list-style-type: none;
+  padding: 10px;
+}
+.iframe-container {
+  position: static  ;
+  bottom: 0;
+  width: 100%;
+  height: 110px;
+  background-color: black;
+  overflow: hidden;
+}
+
+.iframe-container iframe {
+  width: 100%;
+  /*height: calc(100% + 16px); !* Adjust the height to account for scrollbar width *!*/
+  border: none;
+  margin-top: -8px; /* Adjust the margin to hide the scrollbar */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.maindiv {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.navbar-containers{
+  height: 100px;
+}
+.categorydiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 55px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.hobby_name{
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+.watch_btn{
+  padding: 15px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  background-color: #2f61d7;
+  border:none;
+  border-radius: 10px;
+}
+.watch_btn:hover{
+  transition: 0.9s;
+  color: white;
+  background-color: #0f2346;
+  border-radius: 10px;
+}
+.elementdiv img{
+  cursor: pointer;
+  width: 100%;
+}
+.elementdiv img:hover{
+  transition: 1.2s;
+  transform: scale(1.1)
+}
+.describe{
+  text-align: center
+}
+.elementdiv {
+  width: 400px;
+  height: 250px;
+  display: flex;
+  padding: 20px;
+  box-shadow: 0 15px 29px rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 10px;
+  flex-direction: column;
+
+}

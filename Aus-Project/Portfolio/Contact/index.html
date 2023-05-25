@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #241531;color: white">
+<div class="navbar-containers">
+    <object data="../Utility/Navbar.html" class="navbar-object" style="width: 100%"></object>
+</div>
+    <div class="form1">
+
+    <form id="form" onsubmit="return check()">
+
+        <h2>Contact Me</h2><br><hr> <br><br>
+        <label>Enter Name:</label><br>
+        <input type="text" id="name" placeholder="Enter Name" ><br>
+        <span id="nspan">Enter valid Name</span><br><br>
+        <label>Enter Address:</label><br>
+        <input type="text" id="address" placeholder="Enter Address"><br>
+        <span id="aspan">Enter valid Address</span><br><br>
+        <label>Contact Number:</label><br>
+        <input type="number" id="contact" placeholder="Contact"><br>
+        <span id="cspan">Enter valid Contact</span><br><br>
+        <label>Message:</label><br>
+        <textarea  id="message"  rows="4" cols="50" placeholder="Enter message"> </textarea><br>
+        <span id="pspan">Message is Mandatory</span><br><br>
+        <input type="submit" name="submit" value="Submit" id="sub">
+    </form>
+</div>
+<br><br>
+<div class="iframe-container">
+    <iframe src="../Utility/Footer.html" style="width: 100%;overflow: hidden"></iframe>
+</div>
+<script>
+    function check(){
+        let regx=/^[a-zA-Z]+$/;
+        let a,b,c,d;
+        let q,w,e,r;
+        let x=document.forms["form"]["name"].value;
+        let y=document.forms["form"]["address"].value;
+        let z=document.forms["form"]["contact"].value;
+        let p=document.forms["form"]["message"].value;
+
+        if(!x.match(regx))
+        {
+            document.getElementById('name').style.border="2px solid red"
+            document.getElementById('nspan').style.visibility="visible"
+            // return false
+            q=true;
+        }
+        else
+        {
+            document.getElementById('name').style.border="2px solid green"
+            document.getElementById('nspan').style.visibility="hidden"
+            a=true;
+        }
+
+
+        if (!y.match(regx))
+        {
+            document.getElementById('address').style.border="2px solid red"
+            document.getElementById('aspan').style.visibility="visible"
+            // return false
+            w=true;
+        }
+        else
+        {
+            document.getElementById('address').style.border="2px solid green"
+            document.getElementById('aspan').style.visibility="hidden"
+            b=true;
+
+        }
+
+        if (/^\s*$/.test(z))
+        {
+            document.getElementById('contact').style.border="2px solid red"
+            document.getElementById('cspan').style.visibility="visible"
+            // return false
+            e=true
+        }
+        else
+        {
+            document.getElementById('contact').style.border="2px solid green"
+            document.getElementById('cspan').style.visibility="hidden"
+            c=true;
+
+        }
+
+
+        // if (!p.match(regx))
+            if (/^\s*$/.test(p)) {
+            document.getElementById('message').style.border="2px solid red"
+            document.getElementById('pspan').style.visibility="visible"
+            // return false
+            r=true;
+        }
+        else
+        {
+            document.getElementById('message').style.border="2px solid green"
+            document.getElementById('pspan').style.visibility="hidden"
+            d=true;
+        }
+        if(q==true || w==true || e==true || r==true)
+        {
+            return false
+        }
+        if(a==true && b==true && c==true && d==true)
+        {
+            document.getElementById('name').style.border="7px solid green"
+            document.getElementById('address').style.border="7px solid green"
+            document.getElementById('contact').style.border="7px solid green"
+            document.getElementById('message').style.border="7px solid green"
+            alert("Form Submitted Successfully")
+        }
+    }
+
+</script>
+</body>
+</html>
